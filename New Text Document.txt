@@ -1,0 +1,21 @@
+ONE TO MANY ----------
+
+category (one) - product (many)
+1 categorye aid cox product ola biler
+lakin 1 productun 1 categorysi ola biler
+
+product (one) - product images (many)
+1 producta aid cox images ola biler
+lakin 1 image 1 producta aid ola biler
+
+category - list<Product>
+product - category id, category? category
+
+product - List<ProductImages>?
+productImages - product Id, Product? product
+
+----------------------------------------------------
+MANY TO MANY --------
+Product - ICollection, IEnumerable <ProductColor>? ProductColors 
+Color - ICollection, IEnumerable <ProductColor>? ProductColors  
+ProductColor - ProductID, ColorID, Product product, Color color
